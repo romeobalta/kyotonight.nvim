@@ -1,0 +1,26 @@
+{
+    "name": "kyoto Night",
+    "comment": "",
+    "use-theme-colors": false,
+    "foreground-color": "#c0caf5",
+    "background-color": "#1a1b26",
+    "palette": [
+        "#12131b",
+        "#f38ba8",
+        "#b4cea1",
+        "#f9e2af",
+        "#8a9cc2",
+        "#cba6f7",
+        "#7dcfff",
+        "#a9b1d6",
+        "#414868",
+        "#f38ba8",
+        "#b4cea1",
+        "#f9e2af",
+        "#8a9cc2",
+        "#cba6f7",
+        "#7dcfff",
+        "#c0caf5"
+    ]
+}
+  

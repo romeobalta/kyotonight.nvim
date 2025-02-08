@@ -1,0 +1,45 @@
+[colors]
+foreground = "#c0caf5"
+background = "#1a1b26"
+cursor_bg = "#c0caf5"
+cursor_border = "#c0caf5"
+cursor_fg = "#1a1b26"
+selection_bg = "#283457"
+selection_fg = "#c0caf5"
+split = "#8a9cc2"
+compose_cursor = "#e5b799"
+scrollbar_thumb = "#292e42"
+
+ansi = ["#12131b", "#f38ba8", "#b4cea1", "#f9e2af", "#8a9cc2", "#cba6f7", "#7dcfff", "#a9b1d6"]
+brights = ["#414868", "#ff9ab6", "#b5e191", "#fef1d7", "#91a9db", "#d6b6ff", "#a4daff", "#c0caf5"]
+
+[colors.tab_bar]
+inactive_tab_edge = "#0e0e16"
+background = "#1a1b26"
+
+[colors.tab_bar.active_tab]
+fg_color = "#0e0e16"
+bg_color = "#8a9cc2"
+
+[colors.tab_bar.inactive_tab]
+fg_color = "#6c7086"
+bg_color = "#292e42"
+
+[colors.tab_bar.inactive_tab_hover]
+fg_color = "#8a9cc2"
+bg_color = "#292e42"
+# intensity = "Bold"
+
+[colors.tab_bar.new_tab_hover]
+fg_color = "#8a9cc2"
+bg_color = "#1a1b26"
+intensity = "Bold"
+
+[colors.tab_bar.new_tab]
+fg_color = "#8a9cc2"
+bg_color = "#1a1b26"
+
+[metadata]
+aliases = []
+author = "folke"
+name = "kyotonight_simple"

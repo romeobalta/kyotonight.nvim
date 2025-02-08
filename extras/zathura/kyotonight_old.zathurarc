@@ -1,0 +1,38 @@
+# kyotonight color theme for Zathura
+# Swaps Foreground for Background to get a light version if the user prefers
+#
+# kyotonight color theme
+#
+set notification-error-bg "#f38ba8"
+set notification-error-fg "#8a9cc2"
+set notification-warning-bg "#f9e2af"
+set notification-warning-fg "#414868"
+set notification-bg "#161617"
+set notification-fg "#8a9cc2"
+set completion-bg "#161617"
+set completion-fg "#a9b1d6"
+set completion-group-bg "#161617"
+set completion-group-fg "#a9b1d6"
+set completion-highlight-bg "#414868"
+set completion-highlight-fg "#8a9cc2"
+set index-bg "#161617"
+set index-fg "#8a9cc2"
+set index-active-bg "#414868"
+set index-active-fg "#8a9cc2"
+set inputbar-bg "#161617"
+set inputbar-fg "#8a9cc2"
+set statusbar-bg "#161617"
+set statusbar-fg "#8a9cc2"
+set highlight-color "#f9e2af"
+set highlight-active-color "#b4cea1"
+set default-bg "#161617"
+set default-fg "#8a9cc2"
+set render-loading true
+set render-loading-fg "#161617"
+set render-loading-bg "#8a9cc2"
+#
+# Recolor mode settings
+# <C-r> to switch modes
+#
+set recolor-lightcolor "#161617"
+set recolor-darkcolor "#8a9cc2"

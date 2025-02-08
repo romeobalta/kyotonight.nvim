@@ -1,14 +1,14 @@
 local M = {
-  module = "tokyonight",
-  colorscheme = "tokyonight",
-  opts = { style = "moon", plugins = { all = true } },
+  module = "kyotonight",
+  colorscheme = "kyotonight",
+  opts = { style = "simple", plugins = { all = true } },
   globals = { vim = vim },
   cache = {}, ---@type table<string, boolean>
 }
 
 function M.reset()
-  require("tokyonight.util").cache.clear()
-  local colors = require("tokyonight.colors").setup()
+  require("kyotonight.util").cache.clear()
+  local colors = require("kyotonight.colors").setup()
   M.globals.colors = colors
   M.globals.c = colors
 end
@@ -96,7 +96,7 @@ return {
           end,
           extmark_opts = function(_, _, data)
             return {
-              virt_text = { { "⬤ ", data.hl_group } },
+              virt_text = { { "██", data.hl_group } },
               virt_text_pos = "inline",
               priority = 2000,
             }

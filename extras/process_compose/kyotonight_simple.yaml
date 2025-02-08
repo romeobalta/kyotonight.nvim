@@ -1,0 +1,36 @@
+style:
+  name: kyotonight_simple
+  body:
+    fgColor: '#c0caf5'
+    bgColor: '#0e0e16'
+    secondaryTextColor: '#a9b1d6'
+    tertiaryTextColor: '${fg_visual}'
+    borderColor: '#3b4261'
+  stat_table:
+    keyFgColor: '#f9e2af'
+    valueFgColor: '#c0caf5'
+    logoColor: '#f9e2af'
+  proc_table:
+    fgColor: '#8a9cc2'
+    fgWarning: '#f9e2af'
+    fgPending: '#6c7086'
+    fgCompleted: '#b4cea1'
+    fgError: '#eba0ac'
+    headerFgColor: '#c0caf5'
+  help:
+    fgColor: '#7aa2f7'
+    keyColor: '#c0caf5'
+    hlColor: '#b4cea1'
+    categoryFgColor: '#0db9d7'
+  dialog:
+    fgColor: '#7aa2f7'
+    bgColor: '#12131b'
+    contrastBgColor: '#1a1b26'
+    attentionBgColor: '#eba0ac'
+    buttonFgColor: '#12131b'
+    buttonBgColor: '#292e42'
+    buttonFocusFgColor: '#12131b'
+    buttonFocusBgColor: '#8a9cc2'
+    labelFgColor: '#f9e2af'
+    fieldFgColor: '#12131b'
+    fieldBgColor: '#394b70'
