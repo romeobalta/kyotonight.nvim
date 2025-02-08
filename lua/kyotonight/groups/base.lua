@@ -25,11 +25,11 @@ function M.get(c, opts)
     ErrorMsg                    = { fg = c.error }, -- error messages on the command line
     VertSplit                   = { fg = c.border }, -- the column separating vertically split windows
     WinSeparator                = { fg = c.border, bold = true }, -- the column separating vertically split windows
-    Folded                      = { fg = c.purple, bg = c.bg }, -- line used for closed folds
+    Folded                      = { fg = c.fg_gutter, bg = c.bg }, -- line used for closed folds
     FoldColumn                  = { bg = opts.transparent and c.none or c.bg, fg = c.comment }, -- 'foldcolumn'
     SignColumn                  = { bg = opts.transparent and c.none or c.bg, fg = c.fg_gutter }, -- column where |signs| are displayed
     SignColumnSB                = { bg = c.bg_sidebar, fg = c.fg_gutter }, -- column where |signs| are displayed
-    Substitute                  = { bg = c.blue0, fg = c.fg }, -- |:substitute| replacement text highlighting
+    Substitute                  = { bg = c.visual, fg = c.fg }, -- |:substitute| replacement text highlighting
     LineNr                      = { fg = c.fg_gutter }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr                = { fg = c.fg_gutter }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     LineNrAbove                 = { fg = c.fg_gutter },
@@ -116,10 +116,10 @@ function M.get(c, opts)
     LspInfoBorder               = { fg = c.border_highlight, bg = c.bg_float },
 
     -- diagnostics
-    DiagnosticError             = { fg = c.error }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    DiagnosticWarn              = { fg = c.warning }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    DiagnosticInfo              = { fg = c.info }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    DiagnosticHint              = { fg = c.hint }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    DiagnosticError             = { fg = c.error, bg = c.none }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    DiagnosticWarn              = { fg = c.warning, bg = c.none }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    DiagnosticInfo              = { fg = c.info, bg = c.none }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    DiagnosticHint              = { fg = c.hint, bg = c.none }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticUnnecessary       = { undercurl = true, fg = c.terminal_black }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticVirtualTextError  = { bg = Util.blend_bg(c.error, 0.1), fg = c.error }, -- Used for "Error" diagnostic virtual text
     DiagnosticVirtualTextWarn   = { bg = Util.blend_bg(c.warning, 0.1), fg = c.warning }, -- Used for "Warning" diagnostic virtual text

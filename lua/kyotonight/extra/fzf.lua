@@ -67,10 +67,11 @@ end
 M.template = [[
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
-  --info=inline-right \
+  --info=default \
   --ansi \
-  --layout=reverse \
+  --layout=default \
   --border=none \
+  --no-bold \
 %s
 "
 ]]

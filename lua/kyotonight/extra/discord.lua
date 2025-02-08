@@ -23,7 +23,7 @@ function M.generate(colors)
   --background-secondary: ${bg_dark};
   --background-secondary-alt: ${bg_dark};
   --background-tertiary: ${bg_dark1};
-  --background-accent: ${blue0};
+  --background-accent: ${visual};
   --background-floating: ${bg_float};
   --background-nested-floating: ${bg_dark};
   --background-mobile-primary: ${bg};
@@ -41,7 +41,7 @@ function M.generate(colors)
   --info-positive-background: ${green}26;
   --info-positive-foreground: ${hint};
   --info-positive-text: ${fg};
-  --brand-500: ${blue0};
+  --brand-500: ${visual};
   --brand-560: ${blue};
   --info-warning-background: ${yellow}26;
   --info-warning-foreground: ${warning};

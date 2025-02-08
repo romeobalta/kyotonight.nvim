@@ -18,7 +18,7 @@ function M.get(c, opts)
     SnacksNotifierIconError         = { fg = c.error },
     SnacksNotifierTitleError        = { fg = c.error },
     SnacksNotifierInfo              = { fg = c.comment, bg = opts.transparent and c.none or c.bg },
-    SnacksNotifierInfoMinimal       = { fg = c.comment, bg = opts.transparent and c.none or c.bg },
+    SnacksNotifierInfoMinimal       = { fg = c.fg_float, bg = opts.transparent and c.none or c.bg_float },
     SnacksNotifierBorderInfo        = { fg = Util.blend_bg(c.info, 0.4), bg = opts.transparent and c.none or c.bg },
     SnacksNotifierIconInfo          = { fg = c.info },
     SnacksNotifierTitleInfo         = { fg = c.info },
@@ -39,8 +39,8 @@ function M.get(c, opts)
     SnacksNotifierTitleSuccess      = { fg = c.green },
 
     -- Indent
-    SnacksIndent              = { fg = c.bg_subtle, nocombine = true },
-    SnacksIndentScope         = { fg = c.bg_highlight, nocombine = true },
+    SnacksIndent              = { fg = Util.blend_bg(c.bg_subtle, 0.6), nocombine = true },
+    SnacksIndentScope         = { fg = Util.blend_bg(c.bg_highlight, 0.2), nocombine = true },
 
     -- Dashboard
     SnacksDashboardDesc       = { fg = c.cyan },

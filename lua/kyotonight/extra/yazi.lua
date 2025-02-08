@@ -35,7 +35,7 @@ tab_width    = 1
 # Count
 count_copied   = { fg = "${fg}", bg = "${green2}" }
 count_cut      = { fg = "${fg}", bg = "${red1}" }
-count_selected = { fg = "${fg}", bg = "${blue0}" }
+count_selected = { fg = "${fg}", bg = "${visual}" }
 
 # Border
 border_symbol = "│"

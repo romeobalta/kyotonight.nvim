@@ -55,8 +55,8 @@ function M.setup(opts)
     or opts.styles.floats == "dark" and colors.bg_dark
     or colors.bg
 
-  colors.bg_visual = Util.blend_bg(colors.blue0, 0.4)
-  colors.bg_search = colors.blue0
+  colors.bg_visual = Util.blend_bg(colors.visual, 0.4)
+  colors.bg_search = colors.visual
   colors.fg_sidebar = colors.fg_dark
   colors.fg_float = colors.fg
 
@@ -64,10 +64,10 @@ function M.setup(opts)
   colors.todo = colors.blue
   colors.warning = colors.orange
   colors.info = colors.blue1
-  colors.hint = colors.green1
+  colors.hint = colors.green
 
   colors.rainbow = {
-    colors.blue,
+    colors.blue1,
     colors.yellow,
     colors.green,
     colors.teal,
@@ -90,8 +90,8 @@ function M.setup(opts)
     yellow_bright  = Util.brighten(colors.yellow),
     blue           = colors.blue,
     blue_bright    = Util.brighten(colors.blue),
-    magenta        = colors.magenta,
-    magenta_bright = Util.brighten(colors.magenta),
+    magenta        = colors.purple,
+    magenta_bright = Util.brighten(colors.purple),
     cyan           = colors.cyan,
     cyan_bright    = Util.brighten(colors.cyan),
     white          = colors.fg_dark,

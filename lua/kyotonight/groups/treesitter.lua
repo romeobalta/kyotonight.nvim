@@ -84,6 +84,7 @@ function M.get(c, opts)
     ["@string.escape"]              = { fg = c.red }, -- For escape characters within a string.
     ["@string.regexp"]              = "Special", -- For regexes.
     ["@tag"]                        = "Label",
+    ["@tag.builtin"]                = "Label",
     ["@tag.attribute"]              = "@property",
     ["@tag.delimiter"]              = "Delimiter",
     ["@tag.delimiter.tsx"]          = { fg = Util.blend_bg(c.blue, 0.7) },
