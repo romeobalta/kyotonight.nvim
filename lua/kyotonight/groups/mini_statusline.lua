@@ -1,3 +1,5 @@
+local Util = require("kyotonight.util")
+
 local M = {}
 
 M.url = "https://github.com/echasnovski/mini.statusline"
@@ -6,6 +8,8 @@ M.url = "https://github.com/echasnovski/mini.statusline"
 function M.get(c)
   -- stylua: ignore
   return {
+    MiniStatuslineTitle             = { fg = Util.blend_bg(c.fg_dark, 0.4, c.fg_gutter), bg = c.fg_gutter },
+
     MiniStatuslineDevinfo           = { fg = c.fg_dark, bg = c.fg_gutter },
 
     MiniStatuslineDevinfoWarn       = { fg = c.warning, bg = c.fg_gutter },
@@ -19,13 +23,13 @@ function M.get(c)
 
     MiniStatuslineFileinfo          = { fg = c.fg_dark, bg = c.fg_gutter },
     MiniStatuslineFilename          = { fg = c.fg_dark, bg = c.bg_highlight },
-    MiniStatuslineInactive          = { fg = c.blue, bg = c.bg_statusline },
-    MiniStatuslineModeCommand       = { fg = c.black, bg = c.yellow, bold = true },
-    MiniStatuslineModeInsert        = { fg = c.black, bg = c.green, bold = true },
-    MiniStatuslineModeNormal        = { fg = c.black, bg = c.blue, bold = true },
-    MiniStatuslineModeOther         = { fg = c.black, bg = c.teal, bold = true },
-    MiniStatuslineModeReplace       = { fg = c.black, bg = c.red, bold = true },
-    MiniStatuslineModeVisual        = { fg = c.black, bg = c.magenta, bold = true },
+    MiniStatuslineInactive          = { fg = c.fg_title, bg = Util.blend_bg(c.fg_gutter, 0.2) },
+    MiniStatuslineModeCommand       = { fg = c.black, bg = c.yellow },
+    MiniStatuslineModeInsert        = { fg = c.black, bg = c.green },
+    MiniStatuslineModeNormal        = { fg = c.black, bg = c.fg_title },
+    MiniStatuslineModeOther         = { fg = c.black, bg = c.cyan },
+    MiniStatuslineModeReplace       = { fg = c.black, bg = c.red },
+    MiniStatuslineModeVisual        = { fg = c.black, bg = c.magenta },
   }
 end
 

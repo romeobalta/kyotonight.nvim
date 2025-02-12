@@ -28,12 +28,12 @@ function M.get(c, opts)
     ["@diff.minus"]                 = "DiffDelete",
     ["@diff.plus"]                  = "DiffAdd",
     ["@function"]                   = "Function",
-    ["@function.builtin"]           = { fg = c.purple, style = opts.styles.functions },
+    ["@function.builtin"]           = { fg = c.keyword, style = opts.styles.functions },
     ["@function.call"]              = "@function",
-    ["@function.macro"]             = { fg = c.blue, style = opts.styles.functions },
+    ["@function.macro"]             = { fg = c.type, style = opts.styles.functions },
     ["@function.method"]            = "Function",
     ["@function.method.call"]       = "@function.method",
-    ["@keyword"]                    = { fg = c.purple, style = opts.styles.keywords }, -- For keywords that don't fall in previous categories.
+    ["@keyword"]                    = { fg = c.keyword, style = opts.styles.keywords }, -- For keywords that don't fall in previous categories.
     ["@keyword.conditional"]        = "Conditional",
     ["@keyword.coroutine"]          = "@keyword",
     ["@keyword.debug"]              = "Debug",
@@ -46,24 +46,24 @@ function M.get(c, opts)
     ["@keyword.repeat"]             = "Keyword",
     ["@keyword.return"]             = "@keyword",
     ["@keyword.storage"]            = "StorageClass",
-    ["@label"]                      = { fg = c.blue }, -- For labels: `label:` in C and `:label:` in Lua.
+    ["@label"]                      = { fg = c.type }, -- For labels: `label:` in C and `:label:` in Lua.
     ["@markup"]                     = "@none",
     ["@markup.emphasis"]            = { italic = true },
     ["@markup.environment"]         = "Macro",
     ["@markup.environment.name"]    = "Type",
     ["@markup.heading"]             = "Title",
     ["@markup.italic"]              = { italic = true },
-    ["@markup.link"]                = { fg = c.teal },
+    ["@markup.link"]                = { fg = c.special },
     ["@markup.link.label"]          = "SpecialChar",
     ["@markup.link.label.symbol"]   = "Identifier",
     ["@markup.link.url"]            = "Underlined",
-    ["@markup.list"]                = { fg = c.blue }, -- For special punctutation that does not fall in the categories before.
+    ["@markup.list"]                = { fg = c.type }, -- For special punctutation that does not fall in the categories before.
     ["@markup.list.checked"]        = { fg = c.green1 }, -- For brackets and parens.
     ["@markup.list.markdown"]       = { fg = c.orange, bold = true },
-    ["@markup.list.unchecked"]      = { fg = c.blue }, -- For brackets and parens.
+    ["@markup.list.unchecked"]      = { fg = c.type }, -- For brackets and parens.
     ["@markup.math"]                = "Special",
     ["@markup.raw"]                 = "String",
-    ["@markup.raw.markdown_inline"] = { bg = c.terminal_black, fg = c.blue },
+    ["@markup.raw.markdown_inline"] = { bg = c.terminal_black, fg = c.fg_title },
     ["@markup.strikethrough"]       = { strikethrough = true },
     ["@markup.strong"]              = { bold = true },
     ["@markup.underline"]           = { underline = true },
@@ -81,15 +81,15 @@ function M.get(c, opts)
     ["@punctuation.special.markdown"] = "Punctuation", -- For special symbols (e.g. `{}` in string interpolation)
     ["@string"]                     = "String",
     ["@string.documentation"]       = { fg = c.yellow },
-    ["@string.escape"]              = { fg = c.red }, -- For escape characters within a string.
+    ["@string.escape"]              = { fg = c.constant }, -- For escape characters within a string.
     ["@string.regexp"]              = "Special", -- For regexes.
     ["@tag"]                        = "Label",
     ["@tag.builtin"]                = "Label",
     ["@tag.attribute"]              = "@property",
     ["@tag.delimiter"]              = "Delimiter",
-    ["@tag.delimiter.tsx"]          = { fg = Util.blend_bg(c.blue, 0.7) },
-    ["@tag.tsx"]                    = { fg = c.red },
-    ["@tag.javascript"]             = { fg = c.red },
+    ["@tag.delimiter.tsx"]          = { fg = Util.blend_bg(c.fg_title, 0.7) },
+    ["@tag.tsx"]                    = { fg = c.constant },
+    ["@tag.javascript"]             = { fg = c.constant },
     ["@type"]                       = "Type",
     ["@type.builtin"]               = "Builtin",
     ["@type.definition"]            = "Typedef",

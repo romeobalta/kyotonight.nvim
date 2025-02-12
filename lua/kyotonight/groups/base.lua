@@ -16,7 +16,7 @@ function M.get(c, opts)
     CursorIM                    = { fg = c.bg, bg = c.fg }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn                = { bg = c.bg_highlight }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine                  = { bg = c.bg_highlight }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
-    Directory                   = { fg = c.blue }, -- directory names (and other special names in listings)
+    Directory                   = { fg = c.fg_title }, -- directory names (and other special names in listings)
     DiffAdd                     = { bg = c.diff.add }, -- diff mode: Added line |diff.txt|
     DiffChange                  = { bg = c.diff.change }, -- diff mode: Changed line |diff.txt|
     DiffDelete                  = { bg = c.diff.delete }, -- diff mode: Deleted line |diff.txt|
@@ -37,7 +37,7 @@ function M.get(c, opts)
     MatchParen                  = { fg = c.orange, bold = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg                     = { fg = c.fg_dark, bold = true }, -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea                     = { fg = c.fg_dark }, -- Area for messages and cmdline
-    MoreMsg                     = { fg = c.blue }, -- |more-prompt|
+    MoreMsg                     = { fg = c.fg_title }, -- |more-prompt|
     NonText                     = { fg = c.fg_gutter }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
     Normal                      = { fg = c.fg, bg = opts.transparent and c.none or c.bg }, -- normal text
     NormalNC                    = { fg = c.fg, bg = opts.transparent and c.none or opts.dim_inactive and c.bg_dark or c.bg }, -- normal text in non-current windows
@@ -51,7 +51,7 @@ function M.get(c, opts)
     PmenuMatchSel               = { bg = Util.blend_bg(c.fg_gutter, 0.8), fg = c.red }, -- Popup menu: Matched text in selected item.
     PmenuSbar                   = { bg = Util.blend_fg(c.bg_popup, 0.95) }, -- Popup menu: scrollbar.
     PmenuThumb                  = { bg = c.fg_gutter }, -- Popup menu: Thumb of the scrollbar.
-    Question                    = { fg = c.blue }, -- |hit-enter| prompt and yes/no questions
+    Question                    = { fg = c.fg_title }, -- |hit-enter| prompt and yes/no questions
     QuickFixLine                = { bg = c.bg_visual }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     Search                      = { bg = c.bg_search, fg = c.fg }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
     IncSearch                   = { bg = c.orange, fg = c.black }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
@@ -65,8 +65,8 @@ function M.get(c, opts)
     StatusLineNC                = { fg = c.fg_gutter, bg = c.bg_statusline }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine                     = { bg = c.bg_statusline, fg = c.fg_gutter }, -- tab pages line, not active tab page label
     TabLineFill                 = { bg = c.black }, -- tab pages line, where there are no labels
-    TabLineSel                  = { fg = c.black, bg = c.blue }, -- tab pages line, active tab page label
-    Title                       = { fg = c.blue }, -- titles for output from ":set all", ":autocmd" etc.
+    TabLineSel                  = { fg = c.black, bg = c.fg_title }, -- tab pages line, active tab page label
+    Title                       = { fg = c.fg_title }, -- titles for output from ":set all", ":autocmd" etc.
     Visual                      = { bg = c.bg_visual }, -- Visual mode selection
     VisualNOS                   = { bg = c.bg_visual }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg                  = { fg = c.warning }, -- warning messages
@@ -77,7 +77,7 @@ function M.get(c, opts)
 
     Bold                        = { bold = true, fg = c.fg }, -- (preferred) any bold text
     Builtin                     = "Keyword",
-    Character                   = { fg = c.red }, --  a character constant: 'c', '\n'
+    Character                   = { fg = c.green }, --  a character constant: 'c', '\n'
     Constant                    = { fg = c.red }, -- (preferred) any constant
     Conditional                 = "Keyword", -- (preferred) any conditional
     Debug                       = { fg = c.orange }, --    debugging statements
@@ -88,21 +88,21 @@ function M.get(c, opts)
     Italic                      = { italic = true, fg = c.fg }, -- (preferred) any italic text
     Keyword                     = { fg = c.purple, style = opts.styles.keywords }, --  any other keyword
     Operator                    = { fg = c.red }, -- "sizeof", "+", "*", etc.
-    PreProc                     = { fg = c.blue }, -- (preferred) generic Preprocessor
+    PreProc                     = { fg = c.fg_title }, -- (preferred) generic Preprocessor
     Punctuation                 = { fg = c.red }, -- (preferred) punctuation
     Special                     = { fg = c.blue1 }, -- (preferred) any special symbol
     Statement                   = { fg = c.red }, -- (preferred) any statement
     String                      = { fg = c.orange }, --   a string constant: "this is a string"
-    Todo                        = { bg = c.blue, fg = c.bg }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-    Type                        = { fg = c.blue }, -- (preferred) int, long, char, etc.
+    Todo                        = { bg = c.fg_title, fg = c.bg }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Type                        = { fg = c.fg_title }, -- (preferred) int, long, char, etc.
     Underlined                  = { underline = true }, -- (preferred) text that stands out, HTML links
-    debugBreakpoint             = { bg = Util.blend_bg(c.info, 0.1), fg = c.blue }, -- used for breakpoint colors in terminal-debug
+    debugBreakpoint             = { bg = Util.blend_bg(c.info, 0.1), fg = c.fg_title }, -- used for breakpoint colors in terminal-debug
     debugPC                     = { bg = c.bg_sidebar }, -- used for highlighting the current line in terminal-debug
     dosIniLabel                 = "@property",
-    helpCommand                 = { bg = c.terminal_black, fg = c.blue },
+    helpCommand                 = { bg = c.terminal_black, fg = c.fg_title },
     htmlH1                      = { fg = c.purple, bold = true },
-    htmlH2                      = { fg = c.blue, bold = true },
-    qfFileName                  = { fg = c.blue },
+    htmlH2                      = { fg = c.fg_title, bold = true },
+    qfFileName                  = { fg = c.fg_title },
     qfLineNr                    = { fg = c.comment },
 
     -- These groups are for the native LSP client. Some other LSP clients may
@@ -141,7 +141,7 @@ function M.get(c, opts)
     diffChanged                 = { bg = c.diff.change, fg = c.git.change },
     diffOldFile                 = { fg = c.blue1, bg=c.diff.delete },
     diffNewFile                 = { fg = c.blue1, bg=c.diff.add },
-    diffFile                    = { fg = c.blue },
+    diffFile                    = { fg = c.fg_title },
     diffLine                    = { fg = c.comment },
     diffIndexLine               = { fg = c.purple },
     helpExample                 = { fg = c.comment },

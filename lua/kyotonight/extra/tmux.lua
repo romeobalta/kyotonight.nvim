@@ -16,12 +16,12 @@ set -g message-style "fg=${comment},bg=${fg_gutter}"
 set -g message-command-style "fg=${comment},bg=${fg_gutter}"
 
 set -g pane-border-style "fg=${fg_gutter}"
-set -g pane-active-border-style "fg=${blue}"
+set -g pane-active-border-style "fg=${fg_title}"
 
 set -g status "on"
 set -g status-justify "left"
 
-set -g status-style "fg=${blue},bg=${bg_dark}"
+set -g status-style "fg=${fg_title},bg=${bg_dark}"
 
 set -g status-left-length "100"
 set -g status-right-length "100"
@@ -30,9 +30,9 @@ set -g status-left-style ${none}
 set -g status-right-style ${none}
 
 set -g status-left "#[fg=${purple},bg=${bg_dark},nobold] #S #[default] "
-set -g status-right "#[default] #[fg=${blue},bg=${bg_dark}] #{prefix_highlight} #[default] %Y-%m-%d  %I:%M %p #[fg=${black},bg=${blue},nobold] #h "
+set -g status-right "#[default] #[fg=${fg_title},bg=${bg_dark}] #{prefix_highlight} #[default] %Y-%m-%d  %I:%M %p #[fg=${black},bg=${blue},nobold] #h "
 if-shell '[ "$(tmux show-option -gqv "clock-mode-style")" == "24" ]' {
-  set -g status-right "#[default] #[fg=${blue},bg=${bg_dark}] #{prefix_highlight} #[default] %Y-%m-%d  %H:%M #[fg=${black},bg=${blue},nobold] #h "
+  set -g status-right "#[default] #[fg=${fg_title},bg=${bg_dark}] #{prefix_highlight} #[default] %Y-%m-%d  %H:%M #[fg=${black},bg=${blue},nobold] #h "
 }
 
 setw -g window-status-activity-style "underscore,fg=${fg_sidebar},bg=${bg_dark}"

@@ -7,7 +7,7 @@ function M.get(c, opts)
   -- stylua: ignore
   return {
     AlphaShortcut    = { fg = c.orange },
-    AlphaHeader      = { fg = c.blue },
+    AlphaHeader      = { fg = c.fg_title },
     AlphaHeaderLabel = { fg = c.orange },
     AlphaFooter      = { fg = c.blue1 },
     AlphaButtons     = { fg = c.cyan },

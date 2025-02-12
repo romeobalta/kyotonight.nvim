@@ -18,15 +18,15 @@ gui:
       - "${orange}"
       - "bold"
     optionsTextColor:
-      - "${blue}"
+      - "${fg_title}"
     selectedLineBgColor:
       - "${bg_visual}"
     cherryPickedCommitFgColor:
-      - "${blue}"
+      - "${fg_title}"
     cherryPickedCommitBgColor:
       - "${magenta}"
     markedBaseCommitFgColor:
-      - "${blue}"
+      - "${fg_title}"
     markedBaseCommitBgColor:
       - "${yellow}"
     unstagedChangesColor:

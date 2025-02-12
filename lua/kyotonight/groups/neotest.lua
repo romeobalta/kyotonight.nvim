@@ -7,21 +7,21 @@ function M.get(c)
   -- stylua: ignore
   return {
     NeotestAdapterName  = { fg = c.purple, bold = true },
-    NeotestBorder       = { fg = c.blue },
-    NeotestDir          = { fg = c.blue },
+    NeotestBorder       = { fg = c.fg_title },
+    NeotestDir          = { fg = c.fg_title },
     NeotestExpandMarker = { fg = c.fg_sidebar },
     NeotestFailed       = { fg = c.red },
-    NeotestFile         = { fg = c.teal },
+    NeotestFile         = { fg = c.cyan },
     NeotestFocused      = { fg = c.yellow },
     NeotestIndent       = { fg = c.fg_sidebar },
-    NeotestMarked       = { fg = c.blue },
+    NeotestMarked       = { fg = c.fg_title },
     NeotestNamespace    = { fg = c.green2 },
     NeotestPassed       = { fg = c.green },
     NeotestRunning      = { fg = c.yellow },
-    NeotestSkipped      = { fg = c.blue },
-    NeotestTarget       = { fg = c.blue },
+    NeotestSkipped      = { fg = c.fg_title },
+    NeotestTarget       = { fg = c.fg_title },
     NeotestTest         = { fg = c.fg_sidebar },
-    NeotestWinSelect    = { fg = c.blue },
+    NeotestWinSelect    = { fg = c.fg_title },
   }
 end
 

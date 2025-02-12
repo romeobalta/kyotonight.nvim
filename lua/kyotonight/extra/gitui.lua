@@ -21,7 +21,7 @@ function M.generate(colors)
   diff_file_moved: Some("${magenta2}"),
   diff_file_modified: Some("${yellow}"),
   commit_hash: Some("${magenta}"),
-  commit_time: Some("${teal}"),
+  commit_time: Some("${cyan}"),
   commit_author: Some("${green}"),
   danger_fg: Some("${red}"),
   push_gauge_bg: Some("${bg}"),
