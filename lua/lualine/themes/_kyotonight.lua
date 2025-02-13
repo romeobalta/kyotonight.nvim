@@ -9,8 +9,8 @@ function M.get(style)
   local hl = {}
 
   hl.normal = {
-    a = { bg = colors.blue1, fg = colors.black },
-    b = { bg = colors.black, fg = colors.blue1 },
+    a = { bg = colors.blue_saturated, fg = colors.black },
+    b = { bg = colors.black, fg = colors.blue_saturated },
     c = { bg = colors.bg_statusline, fg = colors.comment },
   }
 
@@ -30,17 +30,17 @@ function M.get(style)
   }
 
   hl.replace = {
-    a = { bg = colors.red, fg = colors.black },
-    b = { bg = colors.black, fg = colors.red },
+    a = { bg = colors.red_saturated, fg = colors.black },
+    b = { bg = colors.black, fg = colors.red_saturated },
   }
 
   hl.terminal = {
-    a = { bg = colors.green1, fg = colors.black },
-    b = { bg = colors.black, fg = colors.green1 },
+    a = { bg = colors.green_saturated, fg = colors.black },
+    b = { bg = colors.black, fg = colors.green_saturated },
   }
 
   hl.inactive = {
-    a = { bg = colors.bg_statusline, fg = colors.blue },
+    a = { bg = colors.bg_statusline, fg = colors.blue_saturated },
     b = { bg = colors.bg_statusline, fg = colors.fg_gutter, gui = "bold" },
     c = { bg = colors.bg_statusline, fg = colors.fg_gutter },
   }

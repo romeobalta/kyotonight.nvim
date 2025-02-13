@@ -34,12 +34,12 @@ tab.selected.bg=${blue}
 statusline_default.fg=${fg}
 statusline_default.bg=${bg_dark}
 statusline_error.fg=${error}
-statusline_success.fg=${green1}
+statusline_success.fg=${green_saturated}
 
 *error.bold=true
 *error.fg=${error}
 *warning.fg=${warning}
-*success.fg=${green1}
+*success.fg=${green_saturated}
 
 dirlist_*.bg=${bg}
 dirlist_*.fg=${fg}

@@ -1,5 +1,3 @@
-local Util = require("kyotonight.util")
-
 local M = {}
 
 M.url = "https://github.com/ibhagwan/fzf-lua"
@@ -13,12 +11,12 @@ function M.get(c)
     FzfLuaDirPart       = { fg = c.comment },
     FzfLuaFilePart      = "FzfLuaFzfNormal",
     FzfLuaFzfCursorLine = "Visual",
-    FzfLuaFzfNormal     = { fg = c.fg_title },
-    FzfLuaFzfPointer    = { fg = c.bg_visual },
+    FzfLuaFzfNormal     = { fg = c.blue },
+    FzfLuaFzfPointer    = { fg = c.blue_saturated },
     FzfLuaFzfSeparator  = { fg = c.border_highlight, bg = c.bg },
     FzfLuaHeaderBind    = "@variable",
     FzfLuaHeaderText    = "Title",
-    FzfLuaNormal        = { fg = c.fg_title, bg = c.bg },
+    FzfLuaNormal        = { fg = c.blue, bg = c.bg },
     FzfLuaPath          = "Directory",
     FzfLuaPreviewTitle  = { fg = c.border_highlight, bg = c.bg },
     FzfLuaTitle         = { fg = c.title_popup, bg = c.bg },

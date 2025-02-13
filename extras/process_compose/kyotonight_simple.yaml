@@ -2,7 +2,7 @@ style:
   name: kyotonight_simple
   body:
     fgColor: '#c0caf5'
-    bgColor: '#0e0e16'
+    bgColor: '#0d0e13'
     secondaryTextColor: '#a9b1d6'
     tertiaryTextColor: '${fg_visual}'
     borderColor: '#3b4261'
@@ -13,20 +13,20 @@ style:
   proc_table:
     fgColor: '#8a9cc2'
     fgWarning: '#f9e2af'
-    fgPending: '#6c7086'
+    fgPending: '#414868'
     fgCompleted: '#b4cea1'
-    fgError: '#eba0ac'
+    fgError: '#cea1ae'
     headerFgColor: '#c0caf5'
   help:
-    fgColor: '#7aa2f7'
+    fgColor: '#8a9cc2'
     keyColor: '#c0caf5'
     hlColor: '#b4cea1'
-    categoryFgColor: '#0db9d7'
+    categoryFgColor: '#5db3c9'
   dialog:
-    fgColor: '#7aa2f7'
+    fgColor: '#8a9cc2'
     bgColor: '#12131b'
     contrastBgColor: '#1a1b26'
-    attentionBgColor: '#eba0ac'
+    attentionBgColor: '#cea1ae'
     buttonFgColor: '#12131b'
     buttonBgColor: '#292e42'
     buttonFocusFgColor: '#12131b'

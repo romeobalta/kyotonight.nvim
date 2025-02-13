@@ -36,7 +36,7 @@ function M.setup(opts)
     text = colors.blue7,
   }
 
-  colors.git.ignore = colors.dark3
+  colors.git.ignore = colors.terminal_black
   colors.black = Util.blend_bg(colors.bg, 0.7, "#000000")
   colors.border_highlight = colors.fg_gutter
   colors.border = colors.black
@@ -60,36 +60,35 @@ function M.setup(opts)
   colors.fg_sidebar = colors.fg_dark
   colors.fg_float = colors.fg
 
-  colors.error = colors.red
-  colors.todo = colors.blue
+  colors.error = colors.red_saturated
+  colors.todo = colors.blue_saturated
   colors.warning = colors.orange
-  colors.info = colors.blue1
+  colors.info = colors.blue_saturated
   colors.hint = colors.green
 
   colors.rainbow = {
-    colors.blue1,
+    colors.blue_saturated,
     colors.yellow,
     colors.green,
     colors.cyan,
     colors.magenta,
     colors.purple,
     colors.orange,
-    colors.red,
+    colors.red_saturated,
   }
 
-  -- stylua: ignore
   --- @class TerminalColors
   colors.terminal = {
     black          = colors.black,
     black_bright   = colors.terminal_black,
-    red            = colors.red,
-    red_bright     = Util.brighten(colors.red),
+    red            = colors.red_saturated,
+    red_bright     = Util.brighten(colors.red_saturated),
     green          = colors.green,
     green_bright   = Util.brighten(colors.green),
     yellow         = colors.yellow,
     yellow_bright  = Util.brighten(colors.yellow),
-    blue           = colors.blue1,
-    blue_bright    = Util.brighten(colors.blue1),
+    blue           = colors.blue_saturated,
+    blue_bright    = Util.brighten(colors.blue_saturated),
     magenta        = colors.purple,
     magenta_bright = Util.brighten(colors.purple),
     cyan           = colors.cyan,

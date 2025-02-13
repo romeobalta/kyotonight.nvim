@@ -17,9 +17,9 @@ function M.generate(colors)
 [colors]
 background=${bg_popup}
 text=${fg}
-match=${blue1}
+match=${blue}
 selection=${bg_search}
-selection-match=${blue1}
+selection-match=${blue}
 selection-text=${fg}
 border=${border_highlight}
 ]],

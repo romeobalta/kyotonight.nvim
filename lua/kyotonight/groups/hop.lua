@@ -9,9 +9,9 @@ function M.get(c, opts)
   -- stylua: ignore
   return {
     HopNextKey = { fg = c.yellow, bold = true },
-    HopNextKey1 = { fg = c.blue1, bold = true },
-    HopNextKey2 = { fg = Util.blend_bg(c.blue1, 0.6) },
-    HopUnmatched = { fg = c.dark3 },
+    HopNextKey1 = { fg = c.blue_saturated, bold = true },
+    HopNextKey2 = { fg = Util.blend_bg(c.blue_saturated, 0.6) },
+    HopUnmatched = { fg = c.terminal_black },
   }
 end
 

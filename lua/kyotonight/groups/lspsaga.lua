@@ -7,22 +7,22 @@ function M.get(c, opts)
   -- stylua: ignore
   return {
     DefinitionCount            = { fg = c.purple },
-    DefinitionIcon             = { fg = c.fg_title },
+    DefinitionIcon             = { fg = c.blue },
     DiagnosticInformation      = "DiagnosticInfo",
     DiagnosticWarning          = "DiagnosticWarn",
     LspFloatWinBorder          = { fg = c.border_highlight },
     LspFloatWinNormal          = { bg = c.bg_float },
     LspSagaBorderTitle         = { fg = c.cyan },
-    LspSagaCodeActionBorder    = { fg = c.fg_title },
+    LspSagaCodeActionBorder    = { fg = c.blue },
     LspSagaCodeActionContent   = { fg = c.purple },
-    LspSagaCodeActionTitle     = { fg = c.blue1 },
+    LspSagaCodeActionTitle     = { fg = c.blue_saturated },
     LspSagaDefPreviewBorder    = { fg = c.green },
     LspSagaFinderSelection     = { fg = c.bg_visual },
-    LspSagaHoverBorder         = { fg = c.fg_title },
+    LspSagaHoverBorder         = { fg = c.blue },
     LspSagaRenameBorder        = { fg = c.green },
-    LspSagaSignatureHelpBorder = { fg = c.red },
+    LspSagaSignatureHelpBorder = { fg = c.red_saturated },
     ReferencesCount            = { fg = c.purple },
-    ReferencesIcon             = { fg = c.fg_title },
+    ReferencesIcon             = { fg = c.blue },
     TargetWord                 = { fg = c.cyan },
   }
 end

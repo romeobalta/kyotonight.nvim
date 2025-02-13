@@ -51,7 +51,7 @@ function M.setup()
   -- map of style to style name
   local styles = {
     simple = "",
-    old = "old"
+    -- old = "old"
   }
 
   ---@type string[]

@@ -3,7 +3,7 @@
 #
 # kyotonight color theme
 #
-set notification-error-bg "#f38ba8"
+set notification-error-bg "#cea1ae"
 set notification-error-fg "#c0caf5"
 set notification-warning-bg "#f9e2af"
 set notification-warning-fg "#414868"

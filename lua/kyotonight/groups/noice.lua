@@ -7,11 +7,11 @@ function M.get(c)
   -- stylua: ignore
   local ret = {
     NoiceCmdlineIconInput          = { fg = c.yellow },
-    NoiceCmdlineIconLua            = { fg = c.blue1 },
+    NoiceCmdlineIconLua            = { fg = c.blue_saturated },
     NoiceCmdlinePopupBorderInput   = { fg = c.yellow },
-    NoiceCmdlinePopupBorderLua     = { fg = c.blue1 },
+    NoiceCmdlinePopupBorderLua     = { fg = c.blue_saturated },
     NoiceCmdlinePopupTitleInput    = { fg = c.yellow },
-    NoiceCmdlinePopupTitleLua      = { fg = c.blue1 },
+    NoiceCmdlinePopupTitleLua      = { fg = c.blue_saturated },
     NoiceCompletionItemKindDefault = { fg = c.fg_dark, bg = c.none },
   }
   require("kyotonight.groups.kinds").kinds(ret, "NoiceCompletionItemKind%s")

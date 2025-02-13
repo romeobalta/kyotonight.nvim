@@ -7,15 +7,15 @@ function M.get(c, opts)
   -- stylua: ignore
   return {
     -- General
-    DashboardHeader           = { fg = c.fg_title },
-    DashboardFooter           = { fg = c.blue1 },
+    DashboardHeader           = { fg = c.blue },
+    DashboardFooter           = { fg = c.blue_saturated },
     -- Hyper theme
     DashboardProjectTitle     = { fg = c.cyan },
     DashboardProjectTitleIcon = { fg = c.orange },
     DashboardProjectIcon      = { fg = c.yellow },
     DashboardMruTitle         = { fg = c.cyan },
     DashboardMruIcon          = { fg = c.purple },
-    DashboardFiles            = { fg = c.fg_title },
+    DashboardFiles            = { fg = c.blue },
     DashboardShortCutIcon     = { fg = c.magenta },
     -- Doome theme
     DashboardDesc             = { fg = c.cyan },

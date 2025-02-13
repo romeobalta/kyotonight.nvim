@@ -5,8 +5,8 @@ local M = {}
 --- @param colors ColorScheme
 function M.generate(colors)
   colors.delta = {
-    add = util.blend_bg(colors.green2, 0.45),
-    delete = util.blend_bg(colors.red1, 0.45),
+    add = util.blend_bg(colors.green, 0.25),
+    delete = util.blend_bg(colors.red_saturated, 0.25),
   }
   local delta = util.template(
     [[

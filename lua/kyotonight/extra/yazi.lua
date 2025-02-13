@@ -19,10 +19,10 @@ preview_hovered = { bg = "${bg_highlight}" }
 
 # Find
 find_keyword  = { fg = "${bg_dark}", bg = "${orange}", bold = true }
-find_position = { fg = "${blue2}", bg = "${bg_search}", bold = true }
+find_position = { fg = "${blue_saturated}", bg = "${bg_search}", bold = true }
 
 # Marker
-marker_copied   = { fg = "${green1}", bg = "${green1}" }
+marker_copied   = { fg = "${green_saturated}", bg = "${green_saturated}" }
 marker_cut      = { fg = "${red}", bg = "${red}" }
 marker_marked   = { fg = "${magenta}", bg = "${magenta}" }
 marker_selected = { fg = "${blue}", bg = "${blue}" }
@@ -33,8 +33,8 @@ tab_inactive = { fg = "${fg_gutter}", bg = "${bg}" }
 tab_width    = 1
 
 # Count
-count_copied   = { fg = "${fg}", bg = "${green2}" }
-count_cut      = { fg = "${fg}", bg = "${red1}" }
+count_copied   = { fg = "${fg}", bg = "${teal}" }
+count_cut      = { fg = "${fg}", bg = "${red}" }
 count_selected = { fg = "${fg}", bg = "${visual}" }
 
 # Border
@@ -75,14 +75,14 @@ inactive = { fg = "${fg}" }
 
 # Input
 [input]
-border   = { fg = "${blue2}" }
-title    = { fg = "${blue2}" }
+border   = { fg = "${blue_saturated}" }
+title    = { fg = "${blue_saturated}" }
 value    = { fg = "${purple}" }
 selected = { bg = "${bg_visual}" }
 
 # Completion
 [completion]
-border   = { fg = "${blue2}" }
+border   = { fg = "${blue_saturated}" }
 active   = { fg = "${fg}", bg = "${bg_visual}" }
 inactive = { fg = "${fg}" }
 
@@ -108,7 +108,7 @@ separator_style = { fg = "${comment}" }
 
 # Confirm
 [confirm]
-border  = { fg = "${blue2}" }
+border  = { fg = "${blue_saturated}" }
 title   = { fg = "${border_highlight}" }
 content = {}
 list    = {}

@@ -44,21 +44,21 @@ function M.get(c, opts)
 
     -- Dashboard
     SnacksDashboardDesc       = { fg = c.cyan },
-    SnacksDashboardFooter     = { fg = c.blue1 },
-    SnacksDashboardHeader     = { fg = c.fg_title },
-    SnacksDashboardIcon       = { fg = c.blue1 },
+    SnacksDashboardFooter     = { fg = c.blue_saturated },
+    SnacksDashboardHeader     = { fg = c.blue },
+    SnacksDashboardIcon       = { fg = c.blue_saturated },
     SnacksDashboardKey        = { fg = c.orange },
     SnacksDashboardSpecial    = { fg = c.purple },
-    SnacksDashboardDir        = { fg = c.dark3 },
+    SnacksDashboardDir        = { fg = c.terminal_black },
     -- Profiler
-    SnacksProfilerIconInfo    = { bg = Util.blend_bg(c.blue1, 0.3), fg = c.blue1 },
-    SnacksProfilerBadgeInfo   = { bg = Util.blend_bg(c.blue1, 0.1), fg = c.blue1 },
+    SnacksProfilerIconInfo    = { bg = Util.blend_bg(c.blue_saturated, 0.3), fg = c.blue_saturated },
+    SnacksProfilerBadgeInfo   = { bg = Util.blend_bg(c.blue_saturated, 0.1), fg = c.blue_saturated },
     SnacksScratchKey          = "SnacksProfilerIconInfo",
     SnacksScratchDesc         = "SnacksProfilerBadgeInfo",
-    SnacksProfilerIconTrace   = { bg = Util.blend_bg(c.blue1, 0.1), fg = c.dark3 },
-    SnacksProfilerBadgeTrace  = { bg = Util.blend_bg(c.blue1, 0.03), fg = c.dark3 },
+    SnacksProfilerIconTrace   = { bg = Util.blend_bg(c.blue_saturated, 0.1), fg = c.terminal_black },
+    SnacksProfilerBadgeTrace  = { bg = Util.blend_bg(c.blue_saturated, 0.03), fg = c.terminal_black },
     SnacksZenIcon             = { fg = c.purple },
-    SnacksInputIcon           = { fg = c.blue1 },
+    SnacksInputIcon           = { fg = c.blue_saturated },
     SnacksInputBorder         = { fg = c.yellow },
     SnacksInputTitle          = { fg = c.yellow },
     -- Picker
@@ -67,7 +67,7 @@ function M.get(c, opts)
     SnacksPickerBoxTitle         = { fg = c.orange, bg = c.bg_float },
     SnacksPickerSelected    = { fg = c.magenta1},
     SnacksPickerFlag         = "SnacksProfilerBadgeInfo",
-    SnacksPickerPickWinCurrent   = { fg = c.fg, bg = c.magenta2, bold = true },
+    SnacksPickerPickWinCurrent   = { fg = c.fg, bg = c.magenta_saturated, bold = true },
     SnacksPickerPickWin   = { fg = c.fg, bg = c.bg_search, bold = true },
 
   }

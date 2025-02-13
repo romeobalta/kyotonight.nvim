@@ -4,7 +4,7 @@ comment = { fg = "#565f89", modifiers = ["italic"] }
 constant = { fg = "#f38ba8" }
 "constant.builtin" = { fg = "#a38ac2" }
 "constant.builtin.boolean" = { fg = "#f38ba8" }
-"constant.character" = { fg = "#f38ba8" }
+"constant.character" = { fg = "#b4cea1" }
 "constant.character.escape" = { fg = "#f38ba8" }
 "constant.numeric" = { fg = "#f38ba8" }
 "constant.numeric.float" = { fg = "#f38ba8" }
@@ -14,17 +14,17 @@ constructor = { fg = "#8a9cc2" }
 "diagnostic.hint" = { underline = { style = "curl" } }
 "diagnostic.info" = { underline = { style = "curl" } }
 "diagnostic.warning" = { underline = { style = "curl" } }
-"diff.delta" = { fg = "#7aa2f7" }
+"diff.delta" = { bg = "#323d5a", fg = "#7aa2f7" }
 "diff.delta.moved" = { fg = "#8a9cc2" }
-"diff.minus" = { fg = "#f7768e" }
-"diff.plus" = { fg = "#9ece6a" }
+"diff.minus" = { bg = "#503747", fg = "#f38ba8" }
+"diff.plus" = { bg = "#414845", fg = "#b4cea1" }
 error = { fg = "#f38ba8" }
 function = { fg = "#cea1ae", modifiers = ["italic"] }
 "function.builtin" = { fg = "#a38ac2", modifiers = ["italic"] }
 "function.macro" = { fg = "#8a9cc2", modifiers = ["italic"] }
 "function.method" = { fg = "#cea1ae", modifiers = ["italic"] }
 "function.special" = { fg = "#8a9cc2" }
-hint = { fg = "#addad7" }
+hint = { fg = "#b4cea1" }
 info = { fg = "#7aa2f7" }
 keyword = { fg = "#a38ac2" }
 "keyword.control" = { fg = "#f38ba8" }
@@ -38,12 +38,12 @@ keyword = { fg = "#a38ac2" }
 label = { fg = "#8a9cc2" }
 "markup.bold" = { fg = "#c0caf5", modifiers = ["bold"] }
 "markup.heading" = { fg = "#8a9cc2" }
-"markup.heading.completion" = { bg = "#0e0e16", fg = "#c0caf5" }
+"markup.heading.completion" = { bg = "#0d0e13", fg = "#c0caf5" }
 "markup.heading.hover" = { bg = "#343a55" }
 "markup.italic" = { fg = "#c0caf5", modifiers = ["italic"] }
-"markup.link" = { fg = "#d0e2e0" }
+"markup.link" = { fg = "#7aa2f7" }
 "markup.link.label" = { fg = "#7aa2f7" }
-"markup.link.text" = { fg = "#d0e2e0" }
+"markup.link.text" = { fg = "#7aa2f7" }
 "markup.link.url" = { underline = { style = "line" } }
 "markup.list" = { fg = "#8a9cc2" }
 "markup.normal.completion" = { fg = "#565f89" }
@@ -67,10 +67,10 @@ type = { fg = "#8a9cc2" }
 "ui.cursor.match" = { fg = "#e5b799", modifiers = ["bold"] }
 "ui.linenr" = { fg = "#3b4261" }
 "ui.linenr.select" = { fg = "#3b4261" }
-"ui.menu" = { bg = "#0e0e16", fg = "#c0caf5" }
-"ui.menu.scroll" = { bg = 1513249, fg = 3883617 }
+"ui.menu" = { bg = "#0d0e13", fg = "#c0caf5" }
+"ui.menu.scroll" = { bg = 1447710, fg = 3883617 }
 "ui.menu.selected" = { bg = "#343a55" }
-"ui.popup" = { bg = "#0e0e16", fg = "#3b4261" }
+"ui.popup" = { bg = "#0d0e13", fg = "#3b4261" }
 "ui.selection" = { bg = "bg_highlight" }
 "ui.statusline" = { bg = "#1a1b26", fg = "#a9b1d6" }
 "ui.statusline.inactive" = { bg = "#1a1b26", fg = "#3b4261" }
@@ -78,8 +78,8 @@ type = { fg = "#8a9cc2" }
 "ui.text" = { bg = "#1a1b26", fg = "#c0caf5" }
 "ui.text.focus" = { bg = "#283457" }
 "ui.text.inactive" = { fg = "#565f89", modifiers = ["italic"] }
-"ui.text.info" = { bg = "#0e0e16", fg = "#565f89" }
-"ui.virtual.inlay-hint" = { bg = "#292e38", fg = "#addad7" }
+"ui.text.info" = { bg = "#0d0e13", fg = "#8a9cc2" }
+"ui.virtual.inlay-hint" = { bg = "#292d32", fg = "#b4cea1" }
 "ui.window" = { fg = "#12131b", modifiers = ["bold"] }
 variable = { fg = "#cea1ae" }
 "variable.builtin" = { fg = "#a38ac2" }
@@ -88,83 +88,64 @@ variable = { fg = "#cea1ae" }
 warning = { fg = "#e5b799" }
 
 [palette]
-bg = "#1a1b26"
-bg_dark = "#0e0e16"
-bg_float = "#0e0e16"
-bg_highlight = "#292e42"
-bg_popup = "#0e0e16"
+bg_float = "#0d0e13"
+bg_popup = "#0d0e13"
 bg_search = "#3d59a1"
-bg_sidebar = "#0e0e16"
+bg_sidebar = "#0d0e13"
 bg_statusline = "#1a1b26"
-bg_subtle = "#1b1d2b"
 bg_visual = "#283457"
 black = "#12131b"
-blue = "#8a9cc2"
-blue0 = "#3d59a1"
-blue1 = "#7aa2f7"
-blue2 = "#89ddff"
-blue5 = "#0db9d7"
-blue6 = "#b4f9f8"
-blue7 = "#394b70"
 border = "#12131b"
 border_highlight = "#3b4261"
-comment = "#565f89"
-cyan = "#7dcfff"
-dark3 = "#6c7086"
-"diff.add" = "#3b4837"
+character = "#b4cea1"
+code = "#cea1ae"
+constant = "#f38ba8"
+"diff.add" = "#414845"
 "diff.change" = "#323d5a"
-"diff.delete" = "#513240"
+"diff.delete" = "#503747"
 "diff.text" = "#394b70"
 error = "#f38ba8"
-fg = "#c0caf5"
-fg_code = "#cea1ae"
-fg_dark = "#a9b1d6"
 fg_float = "#c0caf5"
-fg_gutter = "#3b4261"
 fg_sidebar = "#a9b1d6"
-"git.add" = "#9ece6a"
+"git.add" = "#b4cea1"
 "git.change" = "#7aa2f7"
-"git.delete" = "#f7768e"
-"git.ignore" = "#6c7086"
-green = "#b4cea1"
-green1 = "#addad7"
-green2 = "#71a5b5"
-hint = "#addad7"
-inactive = "#7f849c"
+"git.delete" = "#f38ba8"
+"git.ignore" = "#414868"
+highlight = "#e5b799"
+hint = "#b4cea1"
 info = "#7aa2f7"
-magenta = "#cba6f7"
-magenta2 = "#e91f70"
-orange = "#e5b799"
-purple = "#a38ac2"
-rainbow = "#8a9cc2"
+keyword = "#a38ac2"
+match = "#7aa2f7"
+operator = "#f38ba8"
+rainbow = "#7aa2f7"
 "rainbow.2" = "#f9e2af"
 "rainbow.3" = "#b4cea1"
-"rainbow.4" = "#d0e2e0"
-"rainbow.5" = "#cba6f7"
+"rainbow.4" = "#55c0e3"
+"rainbow.5" = "#c55484"
 "rainbow.6" = "#a38ac2"
 "rainbow.7" = "#e5b799"
 "rainbow.8" = "#f38ba8"
-red = "#f38ba8"
-red1 = "#eba0ac"
-teal = "#d0e2e0"
+special = "#7aa2f7"
+statement = "#f38ba8"
+string = "#e5b799"
 "terminal.black" = "#12131b"
 "terminal.black_bright" = "#414868"
-"terminal.blue" = "#8a9cc2"
-"terminal.blue_bright" = "#91a9db"
-"terminal.cyan" = "#7dcfff"
-"terminal.cyan_bright" = "#a4daff"
+"terminal.blue" = "#7aa2f7"
+"terminal.blue_bright" = "#8db0ff"
+"terminal.cyan" = "#55c0e3"
+"terminal.cyan_bright" = "#00d2ff"
 "terminal.green" = "#b4cea1"
 "terminal.green_bright" = "#b5e191"
-"terminal.magenta" = "#cba6f7"
-"terminal.magenta_bright" = "#d6b6ff"
+"terminal.magenta" = "#a38ac2"
+"terminal.magenta_bright" = "#b594dc"
 "terminal.red" = "#f38ba8"
 "terminal.red_bright" = "#ff9ab6"
 "terminal.white" = "#a9b1d6"
 "terminal.white_bright" = "#c0caf5"
 "terminal.yellow" = "#f9e2af"
 "terminal.yellow_bright" = "#fef1d7"
-terminal_black = "#414868"
 title_popup = "#8a9cc2"
-todo = "#8a9cc2"
+todo = "#7aa2f7"
+type = "#8a9cc2"
+visual = "#3d59a1"
 warning = "#e5b799"
-yellow = "#f9e2af"

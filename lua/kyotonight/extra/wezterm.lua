@@ -30,7 +30,7 @@ fg_color = "${bg_dark}"
 bg_color = "${blue}"
 
 [colors.tab_bar.inactive_tab]
-fg_color = "${dark3}"
+fg_color = "${terminal_black}"
 bg_color = "${bg_highlight}"
 
 [colors.tab_bar.inactive_tab_hover]

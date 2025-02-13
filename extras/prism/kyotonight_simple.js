@@ -7,7 +7,7 @@ module.exports =  {
     {
       types: ["prolog", "builtin"],
       style: {
-        color: "#f38ba8",
+        color: "#cea1ae",
       },
     },
     {
@@ -19,13 +19,13 @@ module.exports =  {
     {
       types: ["symbol"],
       style: {
-        color: "#7aa2f7",
+        color: "#8a9cc2",
       },
     },
     {
       types: ["punctuation"],
       style: {
-        color: "#cba6f7",
+        color: "#c55484",
       },
     },
     {
@@ -43,7 +43,7 @@ module.exports =  {
     {
       types: ["operator"],
       style: {
-        color: "#0db9d7",
+        color: "#5db3c9",
       },
     },
     {

@@ -1,14 +1,14 @@
     # kyotoNight Color Palette
-    set -l foreground c0caf5
+    set -l foreground ${fg}
     set -l selection 283457
-    set -l comment 565f89
-    set -l red f38ba8
-    set -l orange e5b799
-    set -l yellow f9e2af
-    set -l green b4cea1
-    set -l purple a38ac2
-    set -l cyan 7dcfff
-    set -l pink cba6f7
+    set -l comment ${comment}
+    set -l red ${red}
+    set -l orange ${orange}
+    set -l yellow ${yellow}
+    set -l green ${green}
+    set -l purple ${purple}
+    set -l cyan ${cyan}
+    set -l pink ${magenta}
 
     # Syntax Highlighting Colors
     set -g fish_color_normal $foreground

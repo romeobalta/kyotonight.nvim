@@ -50,7 +50,7 @@ color = '${orange}'
 
 [[colors.indexed_colors]]
 index = 17
-color = '${red1}'
+color = '${red}'
 
 ]=],
     colors

@@ -6,7 +6,7 @@ M.url = "https://github.com/folke/which-key.nvim"
 function M.get(c, opts)
   -- stylua: ignore
   return {
-    WhichKey          = { fg = c.fg_title },
+    WhichKey          = { fg = c.blue },
     WhichKeyGroup     = { fg = c.comment },
     WhichKeyDesc      = { fg = c.fg_dark },
     WhichKeySeparator = { fg = c.terminal_black },

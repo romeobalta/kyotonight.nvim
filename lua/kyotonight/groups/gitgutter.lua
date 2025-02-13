@@ -7,11 +7,11 @@ function M.get(c, opts)
   -- stylua: ignore
   return {
     GitGutterAdd          = { fg = c.green }, -- diff mode: Added line |diff.txt|
-    GitGutterChange       = { fg = c.blue1 }, -- diff mode: Changed line |diff.txt|
-    GitGutterDelete       = { fg = c.red}, -- diff mode: Deleted line |diff.txt|
+    GitGutterChange       = { fg = c.blue_saturated }, -- diff mode: Changed line |diff.txt|
+    GitGutterDelete       = { fg = c.red_saturated}, -- diff mode: Deleted line |diff.txt|
     GitGutterAddLineNr    = { fg = c.green },
-    GitGutterChangeLineNr = { fg = c.blue1 },
-    GitGutterDeleteLineNr = { fg = c.red },
+    GitGutterChangeLineNr = { fg = c.blue_saturated },
+    GitGutterDeleteLineNr = { fg = c.red_saturated },
   }
 end
 

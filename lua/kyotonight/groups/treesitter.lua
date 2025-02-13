@@ -58,12 +58,12 @@ function M.get(c, opts)
     ["@markup.link.label.symbol"]   = "Identifier",
     ["@markup.link.url"]            = "Underlined",
     ["@markup.list"]                = { fg = c.type }, -- For special punctutation that does not fall in the categories before.
-    ["@markup.list.checked"]        = { fg = c.green1 }, -- For brackets and parens.
+    ["@markup.list.checked"]        = { fg = c.teal }, -- For brackets and parens.
     ["@markup.list.markdown"]       = { fg = c.orange, bold = true },
     ["@markup.list.unchecked"]      = { fg = c.type }, -- For brackets and parens.
     ["@markup.math"]                = "Special",
     ["@markup.raw"]                 = "String",
-    ["@markup.raw.markdown_inline"] = { bg = c.terminal_black, fg = c.fg_title },
+    ["@markup.raw.markdown_inline"] = { bg = c.terminal_black, fg = c.blue },
     ["@markup.strikethrough"]       = { strikethrough = true },
     ["@markup.strong"]              = { bold = true },
     ["@markup.underline"]           = { underline = true },
@@ -87,14 +87,14 @@ function M.get(c, opts)
     ["@tag.builtin"]                = "Label",
     ["@tag.attribute"]              = "@property",
     ["@tag.delimiter"]              = "Delimiter",
-    ["@tag.delimiter.tsx"]          = { fg = Util.blend_bg(c.fg_title, 0.7) },
+    ["@tag.delimiter.tsx"]          = { fg = Util.blend_bg(c.blue, 0.7) },
     ["@tag.tsx"]                    = { fg = c.constant },
     ["@tag.javascript"]             = { fg = c.constant },
     ["@type"]                       = "Type",
     ["@type.builtin"]               = "Builtin",
     ["@type.definition"]            = "Typedef",
     ["@type.qualifier"]             = "@keyword",
-    ["@variable"]                   = { fg = c.fg_code, style = opts.styles.variables }, -- Any variable name that does not have another highlight.
+    ["@variable"]                   = { fg = c.red, style = opts.styles.variables }, -- Any variable name that does not have another highlight.
     ["@variable.builtin"]           = "Builtin", -- Variable names that are defined by the languages, like `this` or `self`.
     ["@variable.member"]            = "@variable", -- For fields.
     ["@variable.parameter"]         = "@variable", -- For parameters of a function.
