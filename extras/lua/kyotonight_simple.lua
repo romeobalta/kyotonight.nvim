@@ -2407,6 +2407,10 @@ local highlights = {
   TreesitterContext = {
     bg = "#343a55"
   },
+  TreesitterContextLineNumber = {
+    bg = "#343a55",
+    fg = "#565f89"
+  },
   TroubleCount = {
     bg = "#3b4261",
     fg = "#c55484"

@@ -9,6 +9,7 @@ function M.get(c)
   -- stylua: ignore
   return {
     TreesitterContext = { bg = Util.blend_bg(c.fg_gutter, 0.8) },
+    TreesitterContextLineNumber = { bg = Util.blend_bg(c.fg_gutter, 0.8), fg = "#565f89" }
   }
 end
 
