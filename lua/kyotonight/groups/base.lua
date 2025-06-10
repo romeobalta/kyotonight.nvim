@@ -12,6 +12,7 @@ function M.get(c, opts)
     ColorColumn                 = { bg = c.bg_subtle }, -- used for the columns set with 'colorcolumn'
     Conceal                     = { fg = c.inactive }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor                      = { fg = c.bg, bg = c.fg }, -- character under the cursor
+    iCursor                     = { fg = c.bg, bg = c.green }, -- character under the cursor
     lCursor                     = { fg = c.bg, bg = c.fg }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM                    = { fg = c.bg, bg = c.fg }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn                = { bg = c.bg_highlight }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
