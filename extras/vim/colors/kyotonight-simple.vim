@@ -273,6 +273,7 @@ hi helpCommand guibg=#414868 guifg=#8a9cc2
 hi helpExample guibg=NONE guifg=#565f89
 hi htmlH1 gui=bold guibg=NONE guifg=#a38ac2
 hi htmlH2 gui=bold guibg=NONE guifg=#8a9cc2
+hi iCursor guibg=#b4cea1 guifg=#1a1b26
 hi illuminatedCurWord guibg=#3b4261
 hi illuminatedWord guibg=#3b4261
 hi lCursor guibg=#c0caf5 guifg=#1a1b26
