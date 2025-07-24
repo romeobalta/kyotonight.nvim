@@ -183,38 +183,6 @@ local highlights = {
   ["@markup.environment"] = "Macro",
   ["@markup.environment.name"] = "Type",
   ["@markup.heading"] = "Title",
-  ["@markup.heading.1.markdown"] = {
-    bold = true,
-    fg = "#7aa2f7"
-  },
-  ["@markup.heading.2.markdown"] = {
-    bold = true,
-    fg = "#f9e2af"
-  },
-  ["@markup.heading.3.markdown"] = {
-    bold = true,
-    fg = "#b4cea1"
-  },
-  ["@markup.heading.4.markdown"] = {
-    bold = true,
-    fg = "#55c0e3"
-  },
-  ["@markup.heading.5.markdown"] = {
-    bold = true,
-    fg = "#c55484"
-  },
-  ["@markup.heading.6.markdown"] = {
-    bold = true,
-    fg = "#a38ac2"
-  },
-  ["@markup.heading.7.markdown"] = {
-    bold = true,
-    fg = "#e5b799"
-  },
-  ["@markup.heading.8.markdown"] = {
-    bold = true,
-    fg = "#f38ba8"
-  },
   ["@markup.italic"] = {
     italic = true
   },
