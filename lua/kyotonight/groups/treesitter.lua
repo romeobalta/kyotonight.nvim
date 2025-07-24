@@ -101,9 +101,6 @@ function M.get(c, opts)
     ["@variable.parameter.builtin"] = "Builtin", -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
   }
 
-  for i, color in ipairs(c.rainbow) do
-    ret["@markup.heading." .. i .. ".markdown"] = { fg = color, bold = true }
-  end
   return ret
 end
 

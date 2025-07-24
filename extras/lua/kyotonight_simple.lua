@@ -2407,6 +2407,10 @@ local highlights = {
   TreesitterContext = {
     bg = "#343a55"
   },
+  TreesitterContextLineNumber = {
+    bg = "#343a55",
+    fg = "#565f89"
+  },
   TroubleCount = {
     bg = "#3b4261",
     fg = "#c55484"
@@ -2592,6 +2596,10 @@ local highlights = {
   htmlH2 = {
     bold = true,
     fg = "#8a9cc2"
+  },
+  iCursor = {
+    bg = "#b4cea1",
+    fg = "#1a1b26"
   },
   illuminatedCurWord = {
     bg = "#3b4261"
